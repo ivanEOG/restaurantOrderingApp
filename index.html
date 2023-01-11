@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Fonts-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+       <!--Style sheet css-->
+       <link rel="stylesheet" href="index.css">
+       <!--Font awsome-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="container hero">
+                <h1>Jimmy´s Dinner</h1>
+                <p>The best burguers and pizzas in town</p>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container feed-container">
+                    <div class="items-feed" id="items-feed">
+                        <!-- items here!! -->
+                    </div>
+
+                   
+                    <div class="titile-order-container" id="title-order-container">
+                        <h2 class="order-title">Your order</h2>
+                    </div>
+                    <div class="order-datails" id="order-details">
+                        <!--Selected items here!!-->
+                    </div>
+                    <div class="total-price">
+                        <p class="total-price-tag">Total price:</p>
+                        <p class="final-price" id="final-price">0</p>
+                    </div>
+                    <button class="complete-order-btn" data-complete="completeORder">Complete order</button>
+
+
+                </div>
+            </section>
+            <section>
+                <div class="modal-payment-form" id="modal-payment-form">
+                    <div class="modal-inner" id="modal-inner">
+                        <h2>Enter card details</h2>
+                        <form id="payment-form">
+                            <input type="text" name="fullName" placeholder="Enter your name" required/>
+                            <input type="text" name="cardNumber" placeholder="Enter your card number" required/>
+                            <input type="text" name="cvvNumber" placeholder="Enter cvv" required/>
+                        </form>
+                        <div class="modal-btns" id="modal-btns">
+                            <button class="modal-btn" id="pay-btn">Pay</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-confirmation-order" id="modal-confirmation-order">
+                    <div class="modal-final-msg" id="modal-final-msg">
+                        <div class="final-msg-container">
+                            <h3 class="confirmation-msg" id="confirmation-msg"></h3>
+                        </div>
+                        <p>Please rate our service:</p>
+                        <div class="rate-btns" id="rate-btns">
+                            <ul>
+                                <li><i class="fa-regular fa-face-sad-cry" data-rate="veryBad"></i></li>
+                                <li><i class="fa-regular fa-face-sad-tear" data-rate="bad"></i></li>
+                                <li><i class="fa-regular fa-face-smile" data-rate="good"></i></li>
+                                <li><i class="fa-regular fa-face-grin-hearts" data-rate="veryGood"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
